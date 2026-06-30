@@ -78,14 +78,16 @@
   <section>
     <div class="wrap">
       <p class="eyebrow">Latest Episode</p>
-      <div class="latest">
+      <!-- Auto-synced from the podcast RSS feed by /assets/feed.js.
+           The values below are a fallback, shown only if the feed can't be reached. -->
+      <div class="latest" id="latest-episode">
         <div class="body">
-          <span class="num">Episode 03 · June 4, 2026 · 1 hr 34 min</span>
-          <h3>Rattlers, Robots &amp; One-Electron Theory</h3>
-          <p>Rattlers vs. Radlers, mukbang ASMR horror, China's looming population collapse, Bob Lazar skepticism, robot kids getting kicked, one-electron theory, undersea cables, and way too much Grok talk. Plus the boys test live AI voice tools mid-episode. Classic Rivers Die.</p>
+          <span class="num" data-ep-meta>Episode 06 · June 25, 2026 · 1 hr 54 min</span>
+          <h3 data-ep-title>Homebrew Mead, Solar Backdoors &amp; Can Math Prove God?</h3>
+          <p data-ep-desc>Justin and Joe crack open some beers and let the conversation wander — homebrewing mead, wild yeast experiments, beekeeping disasters, soccer flops and VAR, Chinese solar panel backdoors, power-line hacking, quantum computing hype, and the big questions: can math prove God? A classic beer-fueled ramble from hops to the heavens.</p>
           <div class="platforms" style="justify-content:flex-start;margin-top:24px;">
             <a class="btn primary" href="/episodes">All Episodes</a>
-            <a class="btn" href="https://open.spotify.com/episode/3U2xiApvWRJkLGmLTy2KL2" target="_blank" rel="noopener">Listen on Spotify</a>
+            <a class="btn" data-ep-spotify href="https://creators.spotify.com/pod/show/michael677/episodes/06---June-25--2026-e3lc8t1" target="_blank" rel="noopener">Listen on Spotify</a>
           </div>
         </div>
       </div>
@@ -103,5 +105,7 @@
       <p>&copy; 2026 Rivers Die Podcast. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="/assets/feed.js" defer></script>
 </body>
 </html>

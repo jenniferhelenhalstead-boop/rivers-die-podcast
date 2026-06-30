@@ -62,7 +62,10 @@
       <h2 class="section-title">All Episodes</h2>
       <p class="section-sub">Every episode with show notes and links to your platform of choice.</p>
 
-      <div class="episodes">
+      <!-- Auto-synced from the podcast RSS feed by /assets/feed.js.
+           The static cards below are a fallback, shown only if the feed
+           can't be reached. -->
+      <div class="episodes" id="episode-archive">
 
         <!-- Episode 03 -->
         <article class="episode">
@@ -123,5 +126,7 @@
       <p>&copy; 2026 Rivers Die Podcast. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="/assets/feed.js" defer></script>
 </body>
 </html>
